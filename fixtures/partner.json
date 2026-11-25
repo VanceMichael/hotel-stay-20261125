@@ -1,0 +1,14 @@
+{
+  "name": "住宿收单方",
+  "path": "/acquiring/actions",
+  "lookup": "/acquiring/actions/",
+  "id": "paymentAction",
+  "group": "actions",
+  "key": "Merchant-Request",
+  "modes": [
+    "accepted",
+    "rejected",
+    "accepted_disconnect",
+    "pending"
+  ]
+}

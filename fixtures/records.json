@@ -1,0 +1,136 @@
+{
+  "hotels": [
+    {
+      "id": "HT-1",
+      "timezone": "Asia/Shanghai"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "101",
+      "type": "twin",
+      "hotel": "HT-1",
+      "state": "clean"
+    },
+    {
+      "id": "102",
+      "type": "twin",
+      "hotel": "HT-1",
+      "state": "inspection"
+    },
+    {
+      "id": "201",
+      "type": "suite",
+      "hotel": "HT-1",
+      "state": "clean"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "GROUP-1",
+      "organizer": "ORG-1",
+      "roomType": "twin",
+      "nights": [
+        "2026-12-01",
+        "2026-12-02"
+      ],
+      "quota": 2,
+      "coveredMinorPerNight": 50000,
+      "coveredBreakfast": 2
+    }
+  ],
+  "guests": [
+    {
+      "id": "GU-1",
+      "name": "合成客人甲"
+    },
+    {
+      "id": "GU-2",
+      "name": "合成客人乙"
+    }
+  ],
+  "rosterDrafts": [
+    {
+      "id": "RS-1",
+      "contract": "GROUP-1",
+      "guest": "GU-1",
+      "arrival": "2026-12-01",
+      "departure": "2026-12-03"
+    }
+  ],
+  "channelInputs": [
+    {
+      "id": "OTA-1",
+      "channel": "CH-A",
+      "guest": "GU-2",
+      "type": "twin",
+      "arrival": "2026-12-01",
+      "departure": "2026-12-02"
+    }
+  ],
+  "prices": [
+    {
+      "type": "twin",
+      "nightMinor": 50000
+    },
+    {
+      "type": "suite",
+      "nightMinor": 80000
+    }
+  ],
+  "actors": [
+    {
+      "id": "sales",
+      "role": "sales"
+    },
+    {
+      "id": "front-a",
+      "role": "frontdesk"
+    },
+    {
+      "id": "front-b",
+      "role": "frontdesk"
+    },
+    {
+      "id": "housekeeping",
+      "role": "housekeeping"
+    },
+    {
+      "id": "finance",
+      "role": "finance"
+    }
+  ],
+  "sourceChanges": [
+    {
+      "id": "GROUP-REDUCE",
+      "contract": "GROUP-1",
+      "quota": 1,
+      "night": "2026-12-02"
+    },
+    {
+      "id": "REPAIR-101",
+      "room": "101",
+      "start": "2026-12-02T02:00:00Z",
+      "reason": "空调维修"
+    },
+    {
+      "id": "CLEAN-102",
+      "room": "102",
+      "state": "clean",
+      "checkedBy": "housekeeping"
+    },
+    {
+      "id": "UPGRADE-WISH",
+      "guest": "GU-1",
+      "room": "201",
+      "date": "2026-12-02",
+      "payer": "guest"
+    },
+    {
+      "id": "EARLY-LEAVE",
+      "guest": "GU-1",
+      "date": "2026-12-02",
+      "requestedBy": "GU-1"
+    }
+  ]
+}

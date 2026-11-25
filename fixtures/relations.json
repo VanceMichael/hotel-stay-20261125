@@ -1,0 +1,26 @@
+[
+  {
+    "table": "rooms",
+    "field": "hotel",
+    "target": "hotels",
+    "nullable": false
+  },
+  {
+    "table": "rosterDrafts",
+    "field": "contract",
+    "target": "contracts",
+    "nullable": false
+  },
+  {
+    "table": "rosterDrafts",
+    "field": "guest",
+    "target": "guests",
+    "nullable": false
+  },
+  {
+    "table": "channelInputs",
+    "field": "guest",
+    "target": "guests",
+    "nullable": false
+  }
+]
